@@ -8,7 +8,8 @@
     @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
     body {
-        margin: 0px;
+      margin: 0px;
+      color: #2596be;
     }
 
     #container {
@@ -70,14 +71,19 @@
       "And I love you for that",
       "Thank you for everything",
       "Please continue to be patient with me",
+      "I know I can be annoying",
+      "I know I can be too much",
+      "I know I made alot of mistakes this past year",
+      "Yet you are still part of my life.",
+      "I will never forget that fact",
       "I've been doing my best to succeed",
       "And your support means alot!!!!",
       "Merry Christmas and A Happy Newyear! :)",
       "by @yujinn"
     ];
 
-    const morphTime = 1;
-    const cooldownTime = 0.25;
+    const morphTime = 4;
+    const cooldownTime = 1;
 
     let textIndex = texts.length - 1;
     let time = new Date();
@@ -146,7 +152,6 @@
     function playMusic(){
       var audio = new Audio('music.mp3');
       audio.play();
-      console.log(audio);
 
       let container = document.getElementById("container");
       container.style.display = "block";
